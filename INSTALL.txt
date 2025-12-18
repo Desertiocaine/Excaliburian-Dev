@@ -1,0 +1,50 @@
+EXCALIBURIAN!! Developer Menu - Installation Instructions
+
+REQUIREMENTS:
+- EXCALIBURIAN!! installed via Steam
+- Basic file editing capabilities
+
+INSTALLATION STEPS:
+
+1. BACKUP YOUR GAME (IMPORTANT!)
+   - Right-click EXCALIBURIAN!! in Steam
+   - Properties > Local Files > Browse
+   - Copy the entire game folder as backup
+
+2. LOCATE GAME DIRECTORY:
+   Default: C:\Program Files (x86)\Steam\steamapps\common\EXCALIBURIAN!!
+
+3. COPY PLUGIN FILE:
+   - Place DevMenuTest.js in: [GAME_DIR]\www\js\plugins\
+   
+4. ENABLE THE PLUGIN:
+   - Open: [GAME_DIR]\www\js\plugins.js in a text editor
+   - Find the last plugin entry (should end with },)
+   - Add this line BEFORE the final ];
+   
+   {"name":"DevMenuTest","status":true,"description":"DevMenuTest v1.0.0 - Simple Test Plugin","parameters":{}},
+
+5. SAVE AND TEST:
+   - Save plugins.js
+   - Launch EXCALIBURIAN!!
+   - Press F10 in-game to test
+
+TROUBLESHOOTING:
+- If F10 doesn't work: Check that plugins.js was edited correctly
+- If game won't start: Restore from backup and retry installation
+- Steam updates may overwrite the plugin - keep backups
+
+UNINSTALLATION:
+- Delete DevMenuTest.js from plugins folder
+- Remove the plugin line from plugins.js
+- Or restore from your backup
+
+FEATURES:
+- Press F10 to open developer menu
+- Access to all legendary weapons and armor
+- Game modification tools (no-clip, damage buffs, etc.)
+- See README.md for complete feature list
+
+LEGAL NOTICE:
+This is a modification for personal use. Requires legitimate copy of EXCALIBURIAN!!
+Original game © Majd Rouhana. Plugin created by AI Assistant.

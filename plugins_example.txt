@@ -1,0 +1,17 @@
+// EXAMPLE: How to add DevMenuTest to plugins.js
+// Find the section that looks like this in your plugins.js file:
+
+{"name":"MKR_ControlCharacterEx","status":true,"description":"メッセージ内で使用可能な制御文字を追加します。","parameters":{"Default_SE_Volume":"40","Default_SE_Pitch":"100","Default_SE_Pan":"0","Default_Wait_Period":"15","Default_Wait_Line":"60\r"}},
+
+// ADD THIS LINE after the existing last plugin (note the comma at the end):
+{"name":"DevMenuTest","status":true,"description":"DevMenuTest v1.0.0 - Simple Test Plugin","parameters":{}},
+
+// The final section should look like:
+{"name":"MKR_ControlCharacterEx","status":true,"description":"メッセージ内で使用可能な制御文字を追加します。","parameters":{"Default_SE_Volume":"40","Default_SE_Pitch":"100","Default_SE_Pan":"0","Default_Wait_Period":"15","Default_Wait_Line":"60\r"}},
+{"name":"DevMenuTest","status":true,"description":"DevMenuTest v1.0.0 - Simple Test Plugin","parameters":{}},
+];
+
+// IMPORTANT: 
+// - Make sure there's a comma after the previous plugin
+// - Make sure the final ]; is still there at the very end
+// - Don't add a comma after the DevMenuTest line (it's the last one)
