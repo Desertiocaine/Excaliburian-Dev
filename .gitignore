@@ -1,0 +1,14 @@
+# EXCALIBURIAN!! Dev Menu .gitignore
+# Only include our dev menu plugin files, exclude all game files
+
+# Exclude all files by default
+/*
+
+# Include only our dev menu files
+!DevMenuTest.js
+!DevMenu_README.md
+!INSTALL.txt
+!LICENSE.txt
+!plugins_example.txt
+!.gitignore
+!README.md
